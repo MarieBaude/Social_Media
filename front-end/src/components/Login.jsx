@@ -12,7 +12,13 @@ const Login = () => {
     <div className='flex justify-start items-center flex-col h-screen'>
       <div className='relative w-full h-full'>
         <video 
-          src={shareVideo} 
+          src={shareVideo}
+          type='video/mp4'
+          loop
+          constrols={false}
+          muted
+          autoPlay
+          className='w-full h-full object-cover'
         />
       </div>
     </div>
