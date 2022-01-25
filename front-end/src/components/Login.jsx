@@ -31,11 +31,11 @@ const Login = () => {
               render={(renderProps) => (
                 <button 
                 type='button'
-                className='bg-mainColor flex justify-center items-center p-3 rounded-lg cursor-pointer outline-none'>
-                <FcGoogle 
-                  className='mr-4'
-                />
-                Sign In With Google
+                className='bg-mainColor flex justify-center items-center p-3 rounded-lg cursor-pointer outline-none'
+                onClick={renderProps.onClick}
+                disabled={renderProps.disabled}
+                >
+                  <FcGoogle className='mr-4' />Sign In With Google
                 </button>
               )}
             />
