@@ -24,6 +24,7 @@ const Login = () => {
           <div className='p-5'>
             <img src={logo} width='130px' alt='logo' />
           </div>
+
           <div className='shadow-2x1'>
             <GoogleLogin 
               clientId=''
@@ -34,6 +35,7 @@ const Login = () => {
                 <FcGoogle 
                   className='mr-4'
                 />
+                Sign In With Google
                 </button>
               )}
             />
