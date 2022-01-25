@@ -5,9 +5,13 @@ import { FcGoogle } from 'react-icons/fc';
 
 import shareVideo from '../assets/share.mp4'
 import logo from '../assets/logowhite.png'
+import { Processor } from 'postcss';
 
 
 const Login = () => {
+  const responseGoogle = (response) => {
+
+  }
   return (
     <div className='flex justify-start items-center flex-col h-screen'>
       <div className='relative w-full h-full'>
@@ -27,7 +31,7 @@ const Login = () => {
 
           <div className='shadow-2x1'>
             <GoogleLogin 
-              clientId=''
+              clientId={process.env.REACT_APP_GOOGLE_API_TOKEN}
               render={(renderProps) => (
                 <button 
                 type='button'
@@ -38,6 +42,9 @@ const Login = () => {
                   <FcGoogle className='mr-4' />Sign In With Google
                 </button>
               )}
+              onSuccess={responseGoogle}
+              onFailure={responseGoogle}
+              cookiePolicy='single_host_origin'
             />
           </div>
         </div>
