@@ -24,6 +24,9 @@ const Sidebar = (user, closeToggle) => {
             <RiHomeFill />
             Home
           </NavLink>
+          <h3 className='mt-2 px-5 text-base 2x1:text-xl'>
+            Discover categories
+          </h3>
         </div>
       </div>
     </div>
