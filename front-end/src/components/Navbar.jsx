@@ -12,15 +12,16 @@ const Navbar = ({ searchTerm, setSearchTerm, user }) => {
           fontSize={21} 
           className="ml-1"
         />
+        <input 
+          type="text" 
+          onChange={(e) => setSearchTerm(e.target.value)}
+          placeholder="Search"
+          value={searchTerm}
+          onFocus={() => navigate('/search')}
+          className="p-2 w-full bg-white outline-none"
+        />
       </div>
-      <input 
-        type="text" 
-        onChange={(e) => setSearchTerm(e.target.value)}
-        placeholder="Search"
-        value={searchTerm}
-        onFocus={() => navigate('/search')}
-        className="p-2 w-full bg-white outline-none"
-      />
+      
     </div>
   );
 };
