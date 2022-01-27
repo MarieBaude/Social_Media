@@ -9,12 +9,12 @@ const isNotActiveStyle = 'flex items-center px-5 gap-3 text-gray-500 hover:text-
 const isActiveStyle = 'flex items-center px-5 gap-3 font-extrabold border-r-2 border-black transition-all duration-200 ease-in-out capitalize';
 
 const categories = [
-  { name: 'Animals' },
-  { name: 'Wallapapers' },
-  { name: 'Photography' },
-  { name: 'Gaming' },
-  { name: 'Coding' },
-  { name: 'Other' }
+  { name: 'animals' },
+  { name: 'wallapapers' },
+  { name: 'photography' },
+  { name: 'gaming' },
+  { name: 'coding' },
+  { name: 'other' }
 ]
 
 const Sidebar = ({user, closeToggle}) => {
