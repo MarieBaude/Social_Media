@@ -11,9 +11,10 @@ const isActiveStyle = 'flex items-center px-5 gap-3 font-extrabold border-r-2 bo
 const categories = [
   {name : 'Animals'},
   {name : 'Wallapapers'},
-  {name : 'Photographie'},
-  {name : 'Gamers'},
-  {name : 'Coding'}
+  {name : 'Photography'},
+  {name : 'Gaming'},
+  {name : 'Coding'},
+  {name : 'Other'}
 ]
 
 const Sidebar = (user, closeToggle) => {
@@ -35,6 +36,11 @@ const Sidebar = (user, closeToggle) => {
           <h3 className='mt-2 px-5 text-base 2x1:text-xl'>
             Discover categories
           </h3>
+          {categories.slice(0, categories.length-1).map((category) => (
+            <NavLink to={`/category/${category.name}`}>
+
+            </NavLink>
+          ))}
         </div>
       </div>
     </div>
