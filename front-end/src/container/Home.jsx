@@ -49,15 +49,15 @@ const Home = () => {
             <img src={user?.image} alt="logo" className="w-28" />
           </Link>
         </div>
-      </div>
-      {toggleSidebar && (
-        <div className="fixed w-4/5 bg-white h-screen overflow-y-auto shadow-md z-10 animate-slide-in ">
-          <div className="absolute w-full flex justify-end items-center p-2">
-            <AiFillCloseCircle fontSize={30} className="cursor-pointer" onClick={() => setToggleSidebar(false)}/>
+        {toggleSidebar && (
+          <div className="fixed w-4/5 bg-white h-screen overflow-y-auto shadow-md z-10 animate-slide-in ">
+            <div className="absolute w-full flex justify-end items-center p-2">
+              <AiFillCloseCircle fontSize={30} className="cursor-pointer" onClick={() => setToggleSidebar(false)}/>
+            </div>
+            <Sidebar user={user && user} closeToggle = {setToggleSidebar}/>
           </div>
-          <Sidebar user={user && user} closeToggle = {setToggleSidebar}/>
-        </div>
-      )}
+        )}
+      </div>
       <div className="pb-2 flex-1 h-screen overflow-y-scroll" ref={scrollRef}>
         <Routes>
           <Route path='/user-profile/:userId' element={<UserProfile />} />
