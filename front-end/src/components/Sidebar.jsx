@@ -5,6 +5,10 @@ import { IoIosArrowForward } from 'react-icons/io';
 import logo from '../assets/logo.png'
 
 const Sidebar = (user, closeToggle) => {
+  const handleCloseSidebar = () => {
+    if (closeToggle) closeToggle(false);
+  }
+
   return (
     <div className='flex flex-col justify-between bg-white h-full overflow-y-scrikk min-w-210 hide-scrollbar'>
       <div className='flex flex-col'>
