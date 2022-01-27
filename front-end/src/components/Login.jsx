@@ -10,9 +10,6 @@ import { client } from '../client';
 const Login = () => {
   const navigate = useNavigate(); 
   const responseGoogle = (response) => {
-<<<<<<< HEAD
-    
-=======
     localStorage.setItem('user', JSON.stringify(response.profileObj));
     const {name, googleId, imageUrl} = response.profileObj;
     const doc = {
@@ -26,7 +23,6 @@ const Login = () => {
       .then(() => {
         navigate('/', { replace: true }) 
       })
->>>>>>> 6c3e2fdb2483d1506a4f2adcd1a4c33153246036
   }
   return (
     <div className='flex justify-start items-center flex-col h-screen'>
