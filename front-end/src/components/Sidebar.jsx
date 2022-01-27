@@ -41,7 +41,11 @@ const Sidebar = (user, closeToggle) => {
             Discover categories
           </h3>
           {categories.slice(0, categories.length - 1).map((category) => (
-            <NavLink to={`/category/${category.name}`}>
+            <NavLink 
+            to={`/category/${category.name}`}
+            className={({ isActive }) => isActive ? isActiveStyle : isNotActiveStyle} 
+            onClick={handleCloseSidebar}
+            >
 
             </NavLink>
           ))}
