@@ -115,6 +115,25 @@ const CreatePin = ({ user }) => {
               </p>
             </div>
           )}
+          <input
+            type="text"
+            value={about}
+            onChange={(e) => setAbout(e.target.value)}
+            placeholder="What is your pin about"
+            className="outline-none text-base sm:text-lg border-b-2 border-gray-200 p-2"
+          />
+          <input
+            type="text"
+            value={destination}
+            onChange={(e) => setDestination(e.target.value)}
+            placeholder="Add destination link"
+            className="outline-none text-base sm:text-lg border-b-2 border-gray-200 p-2"
+          />
+          <div className="flex flex-col">
+            <div>
+              
+            </div>
+          </div>
         </div>
       </div>
     </div>
