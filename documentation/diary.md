@@ -215,3 +215,26 @@
   - add the Loader component in the parent div
 
 
+## Vendredi 28
+### Matin (with Marie)
+  - fix bug avec Sanity (error space bofore '->')
+  - adding image in section pin
+  - adding mouse enter and leave for appear button (download, save)
+  - adding button delete with condition, only the user can delete their images
+  - adding destination link, with a limiter character visible
+
+### Après-midi (with Hamid)
+  - import in create
+  - new content in data : categories with name and image
+  - css upload location with icon
+  - error message of bad type of image
+  - loading icon
+  - adding input with title of pin
+  - condition to check the image type
+  - location for sending image, css, onclick for sending
+  - if image send, we display the image + a button to delete it
+  - adding input for entrer name for pin
+  - adding user name under input
+  - adding input about
+  - add input destination link
+  - select with category
