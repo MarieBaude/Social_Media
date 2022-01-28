@@ -106,4 +106,112 @@
 - hooks user
 - change second in second link, logo by user image
 - config icon 'AiFillCloseCircle' for close burger menu with css
-- 
+-
+
+## Jeudi 27
+### Matin (with Marie)
+- stylization of the sideBar
+
+- in the Home.jsx file
+  - add const scrollReff in const home and assign it useRef(null) 
+  - add a new div that contains a Routes tag
+  - added Route component in Routes tags
+  - move HiMenu tags to previous div
+  - moving toggleSidebar tags to previous
+  
+- in the Sidebar.jsx file
+  - import the NavLink and Link components
+  - import RiHomeFill components (react icon library)
+  - import the IoIosArrowForward component
+  - import logo
+  - add the use and closeToggle parameters to the Sidebar arrow function
+  - styling the parent div in Tailwind
+  - adding a child div
+  - adding a Link tag with the to, className and onclick props
+  - add an img tag in Link with in src logo
+  - transformation of the Sidebar constant into an arrow function
+  - declare a handleCloseSidebar constant inside braces
+  - followed by an arrow function and a condition close toggle
+  - add a div under the Link tag
+  - add a div under the Link tag
+  - have it master the to and className props with an Active function
+  - have declared two constant isNotActiveStyle and isActiveStyle outside of Sidebar function
+  - stylization of the two constants in Tailwind
+
+- addition of the word Home in the Sidebar plus the icon and Categories
+  - added RiHomeFill component in NavLink tag
+  - write Home under the component
+  - have added an H3 with Discover Category in it
+  - make an Array containing the categories, except the Sidebar function
+  - under the H3 have used the .map method to loop the Array containing the categories and display them in the Sidebar
+  - add the onclick handleCloseSidebar props to the NavLink tag
+  - add the props key categorie.name to the NavLink tag
+
+- added user image and user name in Sidebar
+  - added user image and user name in Sidebar
+
+  - creation of the Pin.jsx file in component
+  - rafce no longer import by default
+  - creation of the NavLink.jsx file in component
+  - rafce no longer import by default
+  - creation of the Feed.jsx file in component
+  - rafce no longer import by default
+  - creation of the PinDetail.jsx file in component
+  - rafce no longer import by default
+  - creation of the CreatPin.jsx file in component
+  - rafce no longer import by default
+  - creation of the Search.jsx file in component
+  - rafce no longer import by default
+
+### Aprè-midi (with Hamid)
+
+- editing the Pin.jsx file
+  - import the jsx file created previously
+  - have declared userStateSnnepet in the Pin constant
+  - adding a div to the parent div
+  - add the Navbar component in the div
+  - have added a searchTerm prop to it
+  - have declared five Route components in a div
+  - have declared five Route components in a div with path and element props
+
+
+- added search bar
+- edit the Navbar.jsx file
+  - import the Link and useNavigat components
+  - import the IoMdAdd and IoMdsearch components
+  - transformation of the constant into an arrow function
+  - add the searchTerm, setSearchTerm and user parameters between brackets
+  - declare a navigat constant
+  - followed by an if user return null condition
+  - styled the parent div with Tailwind
+  - have called it IoSearch
+  - have added a text type input
+  - added an onchange prop to it and targeted the value
+  - have styled the input
+  - have declared the search bar in Pin.jsx
+  - have added a new div in Navbar.jsx
+  - in this div have added a Link tag
+  - have an img tag with src user.image
+  - have duplicated the Link tag
+  - removed the img tag
+  - and called the component IoMdAdd
+  - then have the style
+
+- edit Feed.jsx file
+  - add useState and useEffect to react tax
+  - import useParams
+  - import customer
+  - import MasonryLayout
+  - creating the MasoneryLayout file
+  - rafce no longer import by default
+  - declare usesTate in Feed.jsx
+  - then a condition to display the loading message
+
+- added loading bar
+  - edit spinner file
+  - import Loader from react-loader-spinner library
+  - attention Loader to change name in the library
+  - adding a message as a parameter to the Spinner constant
+  - add the Loader component in the parent div
+
+
