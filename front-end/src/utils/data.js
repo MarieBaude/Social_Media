@@ -50,6 +50,30 @@ export const categories = [
   },
 ];
 
+export const feedQuery = `*[_type == 'pin'] | order(_createAt desc) {
+  image {
+    asset-> {
+      url
+    }
+  },
+  _id,
+  destination,
+  postedBy-> {
+    _id,
+    userName,
+    image
+  },
+  save[]{
+    _key,
+    postedBy-> {
+      _id,
+      userName,
+      image
+    },
+  },
+}`;
+
+
 export const userQuery = (userId) => {
     const query = `*[_type == "user" && _id == '${userId}']`;
     return query;
@@ -82,27 +106,6 @@ export const searchQuery = (searchTerm) => {
   return query;
 }
 
-export const feedQuery = `*[_type == 'pin'] | order(_createAt desc) {
-  image {
-    asset-> {
-      url
-    }
-  },
-  _id,
-  destination,
-  postedBy-> {
-    _id,
-    userName,
-    image
-  },
-  save[]{
-    _key,
-    postedBy-> {
-      _id,
-      userName,
-      image
-    },
-  },
-}`;
+
 
 
