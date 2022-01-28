@@ -131,21 +131,22 @@ const CreatePin = ({ user }) => {
           />
           <div className="flex flex-col">
             <div>
-              <p
-                className="mb-2 font-semibold text-lg sm:text-xl"
-              >
+              <p className="mb-2 font-semibold text-lg sm:text-xl" >
                 Choose pin
               </p>
               <select 
                 onChange={(e) => setCategory(e.target.value)}
                 className="outline-none w-4/5 text-base border-b-2 border-gray-200 p-2 rounded-md cursor-pointer"
               >
-                <option 
-                  value='other'
-                  className="bg-white"
-                >
-                  Select category
-                </option>
+                <option value='other' className="bg-white" >Select Category</option>
+                {categories.map((category) => (
+                    <option 
+                      className="text-base border-0 outline-none capitalize bg-white text-black"
+                      value={category.name}
+                    >
+                      {category.name}
+                    </option>
+                ))}
               </select>
             </div>
           </div>
