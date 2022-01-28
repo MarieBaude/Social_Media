@@ -12,7 +12,7 @@ const Pin = ({ pin: { postedBy, image, _id, destination, save } }) => {
   const [savingPost, setSavingPost] = useState(false);
   const navigate = useNavigate();
   const user = fetchUser();
-  const alreadySaved = save?.filter((item) => item.postedBy._id === user.googleId)
+  const alreadySaved = !!(save?.filter((item) => item.postedBy._id === user.googleId))?.length;
 
   return (
     <div className='m-2'>
@@ -39,12 +39,12 @@ const Pin = ({ pin: { postedBy, image, _id, destination, save } }) => {
                   <MdDownloadForOffline />
                 </a>
               </div>
-              {alreadySaved?.lenght !== 0 ? (
-                <button>
+              {alreadySaved ? (
+                <button type='button' className='bg-red-500'>
                   Saved
                 </button>
               ):(
-                <button>
+                <button type='button' className='bg-red-500 opacity-70 hover:opacity-100 text-white font-bold px-5 py-1 text-base rounded-3xl hover:shawdow-md outlined-none'>
                   Save
                 </button>
               )}
