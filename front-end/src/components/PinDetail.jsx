@@ -15,6 +15,31 @@ const PinDetail = ({ user }) => {
   const [addingComment, setAddingComment] = useState(false);
   const { pinId } = useParams();
 
+  const addComment = () => {
+    if (comment) {
+      setAddingComment(true);
+
+      client
+        .patch(pinId)
+        .setIfMissing({ comments: [] })
+        .insert('after', 'comments[-1]', [{ 
+          comment, 
+          _key: uuidv4(), 
+          postedBy: { 
+            _type: 'postedBy', 
+            _ref: user._id 
+          } 
+        }])
+        .commit()
+        .then(() => {
+          fetchPinDetails();
+          setComment('');
+          setAddingComment(false);
+        });
+    }
+  };
+
+
   const fetchPinDetails = () => {
     let query = pinDetailQuery(pinId);
 
@@ -40,6 +65,7 @@ const PinDetail = ({ user }) => {
   if (!pinDetail) { return ( <Spinner message="Loading pin..." /> );}
 
   return (
+    <>
     <div className="flex xl:flex-row flex-col m-auto bg-white" style={{ maxWidth: '1500px', borderRadius: '32px' }}>
           <div className="flex justify-center items-center md:items-start flex-initial">
             <img
@@ -107,14 +133,24 @@ const PinDetail = ({ user }) => {
               <button 
                 type="button"
                 className="bg-red-500 text-white rounded-full px-6 py-2 font-semibold text-base outline-none"
-                //onClick={addComment}
+                onClick={addComment}
               >
-                {addingComment ? 'Posting the comment...' : 'Posted !'}
+                {addingComment ? 'Posting the comment...' : 'Add'}
               </button>
             </div>
           </div>
     </div>
-    );
-};
+    {pins ? (
+      <>
+        <h2 className="text-center font-bold text-2xl mt-8 mb-4">
+          More like this
+        </h2>
+      </>
+    ) : (
+      <Spinner message='Loading more pins...' />
+    )}
+    </>
+  )
+}
 
 export default PinDetail;
