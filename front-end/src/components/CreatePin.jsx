@@ -18,6 +18,9 @@ const CreatePin = ( { user } ) => {
   const [wrongImageType, setWrongImageType] = useState(false);
 
   const navigate = useNavigate();
+  const uploadImage = (e) => {
+    const selectedFile = e.target.files[0];
+  }
   
   return (
     <div 
@@ -52,6 +55,12 @@ const CreatePin = ( { user } ) => {
                     Use high-quality JPG, SVG, PNG, GIF less than 20MB.
                   </p>
                 </div>
+                <input 
+                  type="file" 
+                  name='upload-image'  
+                  onChange={uploadImage}
+                  className='w-0 h-0'  
+                />
               </label>
             ): (
               <p>Something else</p>
