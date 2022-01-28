@@ -73,6 +73,8 @@ const PinDetail = ({ user }) => {
               <img src={pinDetail?.postedBy.image} className="w-10 h-10 rounded-full" alt="user-profile" />
               <p className="font-bold">{pinDetail?.postedBy.userName}</p>
             </Link>
+            <h2 className="mt-5 text-2xl">Comments</h2>
+            
           </div>
     </div>
     );
