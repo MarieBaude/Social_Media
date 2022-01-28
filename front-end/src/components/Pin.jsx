@@ -71,7 +71,7 @@ const Pin = ({ pin: { postedBy, image, _id, destination, save } }) => {
                   className='bg-red-500 opacity-70 hover:opacity-100 text-white font-bold px-5 py-1 text-base rounded-3xl hover:shawdow-md outlined-none'
                   onClick={ (e) => {e.stopPropagation(); savePin(_id); } }
                 >
-                  Save
+                  { savingPost? 'saving' : 'save' }
                 </button>
               )}
             </div>
