@@ -70,6 +70,9 @@ const CreatePin = ({ user }) => {
         .then(() => {
           navigate('/')
         })
+    } else {
+      setFields(true);
+      setTimeout(() => setFields(false), 2000)
     }
   }
 
