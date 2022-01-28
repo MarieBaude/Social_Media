@@ -48,6 +48,9 @@ const CreatePin = ( { user } ) => {
                       Click to upload
                     </p>
                   </div>
+                  <p className="mt-32 text-gray-400">
+                    Recommadation: use high-quality JPG, SVG, PNG, GIF or TIFF less than 20MB.
+                  </p>
                 </div>
               </label>
             ): (
