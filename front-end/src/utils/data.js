@@ -7,20 +7,20 @@ export const userQuery = (userId) => {
 export const searchQuery = (searchTerm) => {
   const query = `*[_type == "pin" && title match '${searchTerm}*' || category match '${searchTerm}*' || about match '${searchTerm}*'] {
     image {
-      asset -> {
+      asset-> {
         url
       }
     },
     _id,
     destination,
-    postedBy -> {
+    postedBy-> {
       _id,
       userName,
       image
     },
     save[]{
       _key,
-      postedBy -> {
+      postedBy-> {
         _id,
         userName,
         image
