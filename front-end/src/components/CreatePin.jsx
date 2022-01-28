@@ -6,7 +6,17 @@ import { client } from '../client';
 import Spinner from './Spinner';
 import { categories } from '../utils/data';
 
+
 const CreatePin = ( { user } ) => {
+  const [title, setTitle] = useState('');
+  const [about, setAbout] = useState('');
+  const [destination, setDestination] = useState('');
+  const [loading, setLoading] = useState(false);
+  const [field, setField] = useState(null);
+  const [category, setCategory] = useState(null);
+  const [imageAsset, setImageAsset] = useState(null);
+  const [setWrongImageType, setSetWrongImageType] = useState(false);
+
   return (
     <div>
         CreatePin 
