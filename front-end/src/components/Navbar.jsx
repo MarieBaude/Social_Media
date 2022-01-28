@@ -38,7 +38,7 @@ const Navbar = ({ searchTerm, setSearchTerm, user }) => {
         </Link>
       </div>
     </div>
-  );
+ );
 };
 
 export default Navbar;
