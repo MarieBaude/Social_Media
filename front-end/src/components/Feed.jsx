@@ -30,13 +30,6 @@ const Feed = () => {
   return (
     <div>
       {pins && <MasonryLayout pins={pins} />}
-
-import React from 'react';
-
-const Feed = () => {
-  return (
-    <div>
-        Feed
     </div>
   );
 };
