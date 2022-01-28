@@ -37,6 +37,15 @@ const Pin = ({ pin: { postedBy, image, _id, destination } }) => {
                   <MdDownloadForOffline />
                 </a>
               </div>
+              {alreadySaved?.lenght !== 0 ? (
+                <button>
+                  Saved
+                </button>
+              ):(
+                <button>
+                  Save
+                </button>
+              )}
             </div>
           </div>
         )}
