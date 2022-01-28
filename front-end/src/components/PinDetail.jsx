@@ -8,7 +8,19 @@ import MasonryLayout from './MasonryLayout';
 import { pinDetailMorePinQuery, pinDetailQuery } from '../utils/data';
 import Spinner from './Spinner';
 
-const PinDetail = () => {
+const PinDetail = ({ user }) => {
+  const [pins, setPins] = useState(null);
+  const [pinDetail, setPinDetails] = useState(null);
+  const [comment, setComment] = useState('');
+  const [addingComment, setAddingComment] = useState(false);
+  const { pinId } = useParams();
+  
+  if (!pinDetail) {
+    return (
+      <Spinner message="Loading pin." />
+    );
+  }
+
   return (
     <div>
         PinDetail
