@@ -15,7 +15,7 @@ const CreatePin = ( { user } ) => {
   const [fields, setFields] = useState(false);
   const [category, setCategory] = useState(null);
   const [imageAsset, setImageAsset] = useState(null);
-  const [setWrongImageType, setSetWrongImageType] = useState(false);
+  const [wrongImageType, setWrongImageType] = useState(false);
 
   const navigate = useNavigate();
   
@@ -36,6 +36,21 @@ const CreatePin = ( { user } ) => {
         <div className="bg-secondaryColor p-3 flex flex-0.7 w-full">
           <div className="flex justify-center items-center flex-col border-2 border-dotted border-gray-300 p-3 w-full h-420">
             { loading && <Spinner /> }
+            { wrongImageType && <p>Wrong image type</p> }
+            { !imageAsset?(
+              <label>
+                <div className="flex flex-col items-center justify-center h-full">
+                  <div className="flex flex-col justify-center items-center">
+                    <p className='font-bold text-2xl'>
+                      <AiOutlineCloudUpload />
+                    </p>
+                  </div>
+                </div>
+              </label>
+            ): (
+              <p>Something else</p>
+            )}
+
           </div>
         </div>
       </div>
