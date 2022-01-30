@@ -11,7 +11,7 @@ const Pin = ({ pin: { postedBy, image, _id, destination, save } }) => {
   const [postHovered, setPostHovered] = useState(false);
   const navigate = useNavigate();
   const user = fetchUser();
-  const alreadySaved = !!(save?.filter((item) => item.postedBy._id === user.googleId))?.length;
+  const alreadySaved = !!(save?.filter((item) => item.postedBy._id === user?.googleId))?.length;
   
   const savePin = (id) => {
     if (!alreadySaved) {
@@ -20,10 +20,10 @@ const Pin = ({ pin: { postedBy, image, _id, destination, save } }) => {
         .setIfMissing({ save: [] })
         .insert('after', 'save[-1]', [{ 
           _key: uuidv4(),
-          userId: user.googleId,
+          userId: user?.googleId,
           postedBy: {
             _type: 'postedBy',
-            _ref: user.googleId
+            _ref: user?.googleId
           }
          }])
         .commit()
@@ -93,7 +93,7 @@ const Pin = ({ pin: { postedBy, image, _id, destination, save } }) => {
                   </a> // voir pour retirer le http://wwww devant les images
                 )}
 
-                { postedBy?._id === user.googleId && (
+                { postedBy?._id === user?.googleId && (
                   <button 
                     type='button'
                     onClick={ (e) => {e.stopPropagation(); deletePin(_id); } }

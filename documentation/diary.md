@@ -251,6 +251,7 @@
 
 ## Dimanche 30
 ### Solo
+#### Profile
   - adding import in user profile file
   - create useState for user, pins, text and active button
   - adding condition different of user start loading
@@ -264,6 +265,8 @@
   - changing list of the categories from data
   - adding image before the name category
   - adding message if no pin in category (bug need fix)
+
+#### Search
   - adding import in search
   - adding use state : pins and loading
   - adding and testing (change loading in true) loading and the message
@@ -272,3 +275,14 @@
   - adding use effect for fetch a search in data
   - changing favicon, name site
   - changing read me, with more content
+
+#### Deployment
+  - adding redirects file in public
+  - in terminal command : npm run build
+  - connecte to netlify
+  - drop build folder in netlify
+  - wait and rename the project
+  - open Sanity manage
+  - create new CORS origins
+  - adding new url in google api
+  - adding '?' before google id in pin.jsx
