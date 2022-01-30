@@ -47,6 +47,9 @@ const UserProfile = () => {
               src={user.image}
               alt="user-pic"
             />
+            <h1 className="font-bold text-3xl text-center mt-3">
+              {user.userName}
+            </h1>
           </div>  
         </div>
       </div>
