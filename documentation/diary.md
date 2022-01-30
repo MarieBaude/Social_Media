@@ -238,3 +238,18 @@
   - adding input about
   - add input destination link
   - select with category
+
+### Solo
+  - adding a map for show all category from data
+  - adding save pin
+  - adding all necessary import in detailPin
+  - adding pinDetail and pinMoreDetail in data
+  - adding content in detail pin : image, css, destination, name, about the picture, the name of the poster, image profile user
+  - adding comment
+  - adding under pin detail, other pin with same category
+  - adding new rule for lenght of destination
+
+## Dimanche 30
+### Solo
+  - 
+
