@@ -11,7 +11,7 @@ const Search = ({ searchTerm }) => {
 
   return (
     <div>
-        Search
+        {loading && <Spinner message="Searching pins" />}
     </div>
     );
 };
