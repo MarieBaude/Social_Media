@@ -70,7 +70,6 @@ const UserProfile = () => {
                     </button>
                   )}
                   onLogoutSuccess={logout}
-                  onFailure={responseGoogle}
                   cookiePolicy='single_host_origin'
                 />
               )}
