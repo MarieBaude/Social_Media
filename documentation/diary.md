@@ -267,4 +267,5 @@
   - adding import in search
   - adding use state : pins and loading
   - adding and testing (change loading in true) loading and the message
-  
+  - adding MasonryLayout
+  - adding message if no pin found
