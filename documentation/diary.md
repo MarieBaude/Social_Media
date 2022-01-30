@@ -286,3 +286,5 @@
   - create new CORS origins
   - adding new url in google api
   - adding '?' before google id in pin.jsx
+  - adding a fetch of user in App.js
+  - reload build folder in netlify
