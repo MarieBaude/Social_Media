@@ -265,3 +265,6 @@
   - adding image before the name category
   - adding message if no pin in category (bug need fix)
   - adding import in search
+  - adding use state : pins and loading
+  - adding and testing (change loading in true) loading and the message
+  
