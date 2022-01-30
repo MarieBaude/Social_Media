@@ -262,4 +262,5 @@
   - adding in profile, list of the pin add and list of the pin saved
   - adding condition, if no pin posted, message showing
   - changing list of the categories from data
+  - adding image before the name category
 
