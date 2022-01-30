@@ -7,11 +7,12 @@ import Spinner from './Spinner';
 
 const Search = ({ searchTerm }) => {
   const [pins, setPins] = useState(null);
-  const [loading, setLoading] = useState(false);
+  const [loading, setLoading] = useState(true);
 
   return (
     <div>
         {loading && <Spinner message="Searching pins" />}
+        {pins?.length !== 0 && <MasonryLayout pins={pins} />}
     </div>
     );
 };
