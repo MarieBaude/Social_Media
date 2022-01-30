@@ -61,7 +61,7 @@ const UserProfile = () => {
                     onClick={renderProps.onClick}
                     disabled={renderProps.disabled}
                     >
-                      <FcGoogle className='mr-4' />Sign In With Google
+                      <AiOutlineLogout color="red" fontSize={21} />
                     </button>
                   )}
                   onSuccess={responseGoogle}
