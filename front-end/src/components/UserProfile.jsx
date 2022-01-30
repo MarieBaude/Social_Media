@@ -17,6 +17,15 @@ const UserProfile = () => {
   const navigate = useNavigate();
   const { userId } = useParams();
 
+  useEffect(() => {
+    const query = userQuery(userId);
+
+    client.fetch(query)
+      .then((data) => {
+        setUser(data[0]);
+    });
+  }, [userId])
+
   if (!user) {
     return <Spinner message='Loading profile...' />
   }
