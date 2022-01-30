@@ -285,6 +285,10 @@
   - open Sanity manage
   - create new CORS origins
   - adding new url in google api
-  - adding '?' before google id in pin.jsx
+  - adding '?' before google id in pin.jsx, and for item posted by
   - adding a fetch of user in App.js
+  - adding condition, if not a user, redirect login page
+  - in terminal, npm run build
   - reload build folder in netlify
+
+## Ending
