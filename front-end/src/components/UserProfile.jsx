@@ -130,7 +130,6 @@ const UserProfile = () => {
               No Pins Found!
             </div>
           )}
-          
 
         </div>
       </div>

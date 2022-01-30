@@ -255,9 +255,10 @@
   - create useState for user, pins, text and active button
   - adding condition different of user start loading
   - adding use effect for fetch data
-  - adding image with random image for source
+  - adding image with random image for source (profile decoration) 
   - adding image user, name under image random
   - adding icon for logout
   - adding two button in profile : Created and saved
-  - adding content in date user created and saved pin'
+  - adding in profile, list of the pin add and list of the pin saved
+  - adding condition, if no pin posted, message showing
 
