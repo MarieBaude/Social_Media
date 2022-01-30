@@ -8,6 +8,8 @@ import { client } from '../client';
 import MasonryLayout from './MasonryLayout';
 import Spinner from './Spinner';
 
+const randomImage = 'https://source.unsplash.com/1600*900/?nature,photography,technology'
+
 const UserProfile = () => {
   const [user, setUser] = useState(null);
   const [pins, setPins] = useState(null);
@@ -31,8 +33,14 @@ const UserProfile = () => {
   }
 
   return (
-    <div>
-      UserProfile
+    <div className="relative pb-2 h-full justify-center items-center">
+      <div className="flex flex-col pb-5">
+        <div className="relative flex flex-col mb-7">
+          <div className="flex flex-col justify-center items-center">
+
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
