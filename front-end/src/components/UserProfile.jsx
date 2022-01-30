@@ -74,7 +74,21 @@ const UserProfile = () => {
                 />
               )}
             </div>
-          </div>  
+          </div>
+
+          <div className='text-center mb-7'>
+            <button
+              type="button"
+              onClick={(e) => {
+                setText(e.target.textContent);
+                setActiveBtn('created');
+              }}
+              className={`${activeBtn === 'created' ? activeBtnStyles : notActiveBtnStyles}`}
+            >
+            </button>
+
+          </div>
+
         </div>
       </div>
     </div>
