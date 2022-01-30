@@ -9,6 +9,14 @@ import MasonryLayout from './MasonryLayout';
 import Spinner from './Spinner';
 
 const UserProfile = () => {
+  const [user, setUser] = useState();
+  const [pins, setPins] = useState();
+  const [text, setText] = useState('Created');
+  const [activeBtn, setActiveBtn] = useState('created');
+
+  const navigate = useNavigate();
+  const { userId } = useParams();
+
   return (
     <div>
       UserProfile
