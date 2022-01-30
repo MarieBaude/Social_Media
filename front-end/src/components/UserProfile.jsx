@@ -28,6 +28,11 @@ const UserProfile = () => {
     });
   }, [userId])
 
+  const logout = () => {
+    localStorage.clear();
+    navigate('/login');
+  }
+
   if (!user) {
     return <Spinner message='Loading profile...' />
   }
@@ -64,7 +69,7 @@ const UserProfile = () => {
                       <AiOutlineLogout color="red" fontSize={21} />
                     </button>
                   )}
-                  onSuccess={responseGoogle}
+                  onLogoutSuccess={logout}
                   onFailure={responseGoogle}
                   cookiePolicy='single_host_origin'
                 />
