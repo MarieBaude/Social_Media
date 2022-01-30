@@ -27,11 +27,7 @@ const Feed = () => {
   
   if (loading) return <Spinner message="We are adding new ideas to your feed !"/>
   
-  if (!pins?.lenght) {
-    return (
-      <h2>No pins available.</h2>
-    )
-  }
+  // if (!pins?.lenght) return <h2>No pins available.</h2>
 
   return (
     <div>
