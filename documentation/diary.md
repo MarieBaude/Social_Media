@@ -259,5 +259,5 @@
   - adding image user, name under image random
   - adding icon for logout
   - adding two button in profile : Created and saved
-  - 
+  - adding content in date user created and saved pin'
 

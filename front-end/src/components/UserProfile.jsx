@@ -119,7 +119,10 @@ const UserProfile = () => {
             >
               Saved
             </button>
-
+          </div>
+          
+          <div className="px-2">
+            <MasonryLayout pins={pins} />
           </div>
 
         </div>
