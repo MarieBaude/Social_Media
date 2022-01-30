@@ -57,7 +57,7 @@ const UserProfile = () => {
                   render={(renderProps) => (
                     <button 
                     type='button'
-                    className='bg-mainColor flex justify-center items-center p-3 rounded-lg cursor-pointer outline-none'
+                    className='bg-white p-2 rounded-full cursor-pointer outline-none shadow-md'
                     onClick={renderProps.onClick}
                     disabled={renderProps.disabled}
                     >
