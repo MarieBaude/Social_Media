@@ -264,4 +264,4 @@
   - changing list of the categories from data
   - adding image before the name category
   - adding message if no pin in category (bug need fix)
-  - 
+  - adding import in search
