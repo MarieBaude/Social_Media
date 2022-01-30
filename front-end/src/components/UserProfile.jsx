@@ -37,8 +37,12 @@ const UserProfile = () => {
       <div className="flex flex-col pb-5">
         <div className="relative flex flex-col mb-7">
           <div className="flex flex-col justify-center items-center">
-
-          </div>
+          <img
+              className=" w-full h-370 2xl:h-510 shadow-lg object-cover"
+              src={randomImage}
+              alt="banner-pic"
+            />
+          </div>  
         </div>
       </div>
     </div>
