@@ -270,3 +270,5 @@
   - adding MasonryLayout
   - adding message if no pin found
   - adding use effect for fetch a search in data
+  - changing favicon, name site
+  - changing read me, with more content
