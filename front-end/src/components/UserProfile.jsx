@@ -37,10 +37,15 @@ const UserProfile = () => {
       <div className="flex flex-col pb-5">
         <div className="relative flex flex-col mb-7">
           <div className="flex flex-col justify-center items-center">
-          <img
+            <img
               className=" w-full h-370 2xl:h-510 shadow-lg object-cover"
               src={randomImage}
               alt="banner-pic"
+            />
+            <img
+              className="rounded-full w-20 h-20 -mt-10 shadow-xl object-cover"
+              src={user.image}
+              alt="user-pic"
             />
           </div>  
         </div>
