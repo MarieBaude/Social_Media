@@ -251,5 +251,11 @@
 
 ## Dimanche 30
 ### Solo
-  - 
+  - adding import in user profile file
+  - create useState for user, pins, text and active button
+  - adding condition different of user start loading
+  - adding use effect for fetch data
+  - adding image with random image for source
+  - adding image user, name under image random
+  - adding icon for logout
 
