@@ -50,6 +50,26 @@ const UserProfile = () => {
             <h1 className="font-bold text-3xl text-center mt-3">
               {user.userName}
             </h1>
+            <div className="absolute top-0 z-1 right-0 p-2">
+              {userId === user._id && (
+                <GoogleLogout 
+                  clientId={process.env.REACT_APP_GOOGLE_API_TOKEN}
+                  render={(renderProps) => (
+                    <button 
+                    type='button'
+                    className='bg-mainColor flex justify-center items-center p-3 rounded-lg cursor-pointer outline-none'
+                    onClick={renderProps.onClick}
+                    disabled={renderProps.disabled}
+                    >
+                      <FcGoogle className='mr-4' />Sign In With Google
+                    </button>
+                  )}
+                  onSuccess={responseGoogle}
+                  onFailure={responseGoogle}
+                  cookiePolicy='single_host_origin'
+                />
+              )}
+            </div>
           </div>  
         </div>
       </div>
