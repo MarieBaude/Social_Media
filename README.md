@@ -27,10 +27,6 @@ With the terminal, go to the project then to the 'front-end' section.
 Execute command ``npm i`` in the terminal to install all dependencies.
 
 
-## Versions
-**Last version :** 1.0
-
-
 ## Authors
 Project realized with :
 * **Antonio Robles** _alias_ [@anto-d88](https://github.com/anto-d88)
