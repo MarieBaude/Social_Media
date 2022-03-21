@@ -1,10 +1,14 @@
-# Share me
-Social media make with a tutoriel - [DEMO](https://share-me-baudemarie.netlify.app/login)
+<h1 align="center">Welcome to Share Me </h1>
+<p>
+  <img alt="Version" src="https://img.shields.io/badge/version-1.0.0-blue.svg?cacheSeconds=2592000" />
+</p>
 
 ![image info](./front-end/src/assets/demo.png)
 
 ### Make with ...
 ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB) ![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white) Sanity
+
+### ✨ [Demo](https://share-me-baudemarie.netlify.app/login)
 
 
 ## The tutoriel
